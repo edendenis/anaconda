@@ -16,7 +16,9 @@
 # Esta seção deve listar todas as principais estruturas/bibliotecas usadas para inicializar seu projeto. Deixe quaisquer complementos/plugins para a seção de agradecimentos. Aqui estão alguns exemplos.
 # 
 # * [![Python 3.8](https://img.shields.io/badge/Python%203.8-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+# 
 # * [![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=anaconda&logoColor=white)](https://www.anaconda.com/)
+# 
 # * [![Jupyter Collaboration](https://img.shields.io/badge/Jupyter%20Collaboration-F37626?style=flat-square&logo=Jupyter&logoColor=white)](https://jupyter.org/)
 # 
 # <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
@@ -58,7 +60,7 @@
 # 
 # #### 1.3.1 `Python 3.8.10`
 # 
-# Para instalar o `Python 3.8.10` a partir do arquivo `Python-3.8.10.tar.xz`, você precisará seguir alguns passos no terminal do `Linux`. Aqui está um guia passo a passo:
+# Para instalar o `Python 3.8.10` a partir do arquivo `Python-3.8.10.tar.xz`, você precisará seguir alguns passos no `Terminal Emulator` do `Linux`. Aqui está um guia passo a passo:
 # 
 # 1. **Baixe o arquivo:** Primeiro, você precisa ter o arquivo `Python-3.8.10.tar.xz`. Se já o possui, ótimo. Caso contrário, você pode baixá-lo do site oficial do Python ou de um repositório confiável.
 # 
@@ -101,7 +103,7 @@
 
 # #### 1.3.2 `Python 3.11`
 # 
-# Para instala o Python `3.11` no `Linux Ubuntu` através do `Terminal Emulator`, você pode seguir os seguintes passos:
+# Para instala o `Python 3.11` no `Linux Ubuntu` através do `Terminal Emulator`, você pode seguir os seguintes passos:
 # 
 # 3. Instale as dependências necessárias para compilar o Python: `sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev libbz2-dev -y`
 # 
@@ -121,11 +123,13 @@
 # 
 # Isso deve exibir a versão `3.11` do `Python`. Agora você pode usar o `Python` `3.11` no seu sistema `Linux Ubuntu`.
 
-# ### 1.3 Para configurar/usar/usar o `Anaconda`
+# ### 1.3 Para configurar/instalar/usar o `Anaconda`
+# 
+# #### 1.3.1 Configurar/Instalar/Usar na conta do usuário (recomendado para usuários iniciantes)
 # 
 # Para configurar/instalar/usar o `Anaconda`, você pode seguir estas etapas:
 # 
-# 1. Navegue até o diretório onde o arquivo .sh está localizado: Use o comando cd para navegar até o diretório onde o arquivo `.sh` está localizado. Por exemplo, se o arquivo `.sh` estiver na sua pasta Downloads, você pode usar o seguinte comando: `cd ~/Downloads`
+# 1. Navegue até o diretório onde o arquivo `.sh` está localizado: Use o comando `cd` para navegar até o diretório onde o arquivo `.sh` está localizado. Por exemplo, se o arquivo `.sh` estiver na sua pasta `Downloads`, você pode usar o seguinte comando: `cd ~/Downloads`
 # 
 # 2. Torne o arquivo `.sh` executável: Por padrão, os arquivos `.sh` não são executáveis diretamente. Para torná-lo executável, use o comando `chmod +x <nome_do_arquivo>.sh`. Por exemplo: `sudo chmod +x Anaconda3-2023.09-0-Linux-x86_64.sh`
 # 
@@ -133,7 +137,24 @@
 # 
 #     Certifique-se de substituir `"nome_do_arquivo.sh"` pelo nome real do arquivo `.sh` que você deseja instalar.
 # 
-#     Siga as instruções: Dependendo do que o arquivo `.sh` faz, ele pode abrir um instalador ou realizar alguma ação específica. Siga as instruções apresentadas no terminal para concluir a instalação.
+#     **Siga as instruções**: Dependendo do que o arquivo `.sh` faz, ele pode abrir um instalador ou realizar alguma ação específica. Siga as instruções apresentadas no `Terminal Emulator` para concluir a instalação.
+# 
+#     3.1 Antes do término do processo de instalação, ler a Seção 2: **Comandos para habilitar/desabilitar a inicialização do ambiente `base` junto com o `Terminal Emulator`**
+# 
+
+# #### 1.3.2 Configurar/Instalar/Usar para acesso a todos (**NÃO** recomendado para usuários iniciantes)
+# 
+# Para configurar/instalar/usar o `Anaconda`, você pode seguir estas etapas:
+# 
+# 1. Navegue até o diretório onde o arquivo .sh está localizado: Use o comando `cd` para navegar até o diretório onde o arquivo `.sh` está localizado. Por exemplo, se o arquivo `.sh` estiver na sua pasta Downloads, você pode usar o seguinte comando: `cd ~/Downloads`
+# 
+# 2. Torne o arquivo `.sh` executável: Por padrão, os arquivos `.sh` não são executáveis diretamente. Para torná-lo executável, use o comando `chmod +x <nome_do_arquivo>.sh`. Por exemplo: `sudo chmod +x Anaconda3-2023.09-0-Linux-x86_64.sh`
+# 
+# 3. Execute o arquivo `.sh`: Agora que o arquivo `.sh` é executável, você pode executá-lo usando o seguinte comando: `sudo ./Anaconda3-2023.09-0-Linux-x86_64.sh`
+# 
+#     Certifique-se de substituir `"nome_do_arquivo.sh"` pelo nome real do arquivo `.sh` que você deseja instalar.
+# 
+#     **Siga as instruções**: Dependendo do que o arquivo `.sh` faz, ele pode abrir um instalador ou realizar alguma ação específica. Siga as instruções apresentadas no terminal para concluir a instalação.
 # 
 #     Use o `sudo` se quiser instalar em uma pasta que seja acessível para todos os usuários, porém, é mais difícil de configurar e pode dar conflitos com outras aplicações, como por exemplo, o `zsh` caso este não seja configurado com o caminho correto. Sem o `sudo`, quando se configura outras aplicações, estas, em geral, reconhecer a instalação na pasta do usuário.
 # 
@@ -143,33 +164,39 @@
 # 
 #     Salve o arquivo e feche o editor de texto.
 # 
-# 4. **Atualize as configurações de ambiente:** Para que as alterações no arquivo de perfil entrem em vigor, recarregue as configurações de ambiente executando o seguinte comando: `source /etc/profile`
+#     3.2 Antes do término do processo de instalação, ler a Seção 2: **Comandos para habilitar/desabilitar a inicialização do ambiente `base` junto com o `Terminal Emulator`**
 # 
 # Agora, o `Anaconda` deve estar instalado e disponível para todos os usuários do sistema. Eles podem acessar o `Conda` e seus ambientes virtualizados usando o comando `conda` no `Terminal Emulator`.
+# 
 
-# ## 2. Comandos para habilitar/desabilitar a inicialização do ambiente `base` junto com o terminal
+# ## 2. Comandos para habilitar/desabilitar a inicialização do ambiente `base` junto com o `Terminal Emulator`
 # 
-# No momento da instalação, irá aparecer a seguinte pergunta na qual você pode habilitar ou desabilitar o ambiente `base`, leia com atenção, pois possui os comandos, tanto para habilitar, como para desabilitar:
+# 1. No momento da instalação, irá aparecer a seguinte pergunta na qual você pode habilitar ou desabilitar o ambiente `base`, leia com atenção, pois possui os comandos, tanto para habilitar, como para desabilitar:
 # 
-#     ```
-#     Do you wish to update your shell profile to automatically initialize conda?
-#     This will activate conda on startup and change the command prompt when activated.
-#     If you'd prefer that conda's base environment not be activated on startup,
-#     run the following command when conda is activated:
+# ```
+# Do you wish to update your shell profile to automatically initialize conda?
+# This will activate conda on startup and change the command prompt when activated.
+# If you'd prefer that conda's base environment not be activated on startup,
+# run the following command when conda is activated:
 # 
-#     conda config --set auto_activate_base false
-#     
-#     You can undo this by running `conda init --reverse $SHELL`? [yes|no]
-#     [no] >>> 
-#     ```
+# conda config --set auto_activate_base false
 # 
-# Responda `no` para *NÃO** desfazer o comando inicializar o ambiente `(base)` ao abrir o terminal.
+# You can undo this by running `conda init --reverse $SHELL`? [yes|no]
+# [no] >>> 
+# ```
+# 
+# Responda `no` para **NÃO** desfazer o comando inicializar o ambiente `(base)` ao abrir o `Terminal Emulator`.
+# 
+# 2. **Atualize as configurações de ambiente:** Para que as alterações no arquivo de perfil entrem em vigor, recarregue as configurações de ambiente executando o seguinte comando: `source /etc/profile`
+# 
+# Agora, o `Anaconda` deve estar instalado e disponível para todos os usuários do sistema. Eles podem acessar o `Conda` e seus ambientes virtualizados usando o comando `conda` no `Terminal Emulator`.
+# 
 
 # ### 2.2 Iniciar o `conda` com o comando `conda init`
 # 
 # Vamos revisar e ajustar o procedimento para garantir que tudo esteja configurado corretamente:
 # 
-# 1. **Verifique o arquivo de inicialização do shell**: Verifique se o caminho para o `Conda` está corretamente configurado no seu arquivo de inicialização do shell (`~/.bashrc` ou `~/.zshrc`). Vamos garantir que o caminho esteja adicionado corretamente. Para editar o arquivo `~/.bashrc` se estiver usando `Bash`: `nano ~/.bashrc`
+# 1. **Verifique o arquivo de inicialização do _shell_**: Verifique se o caminho para o `Conda` está corretamente configurado no seu arquivo de inicialização do _shell_ (`~/.bashrc` ou `~/.zshrc`). Vamos garantir que o caminho esteja adicionado corretamente. Para editar o arquivo `~/.bashrc` se estiver usando `Bash`: `nano ~/.bashrc`
 # 
 #     1.1 Ou para editar o arquivo `~/.zshrc` se estiver usando `Zsh`: `nano ~/.zshrc`
 # 
@@ -177,7 +204,7 @@
 # 
 #     Salve e feche o arquivo após adicionar essa linha.
 # 
-# 3. **Recarregue as configurações do shell**: Após salvar as alterações no arquivo de inicialização do shell, recarregue as configurações do shell para aplicar as mudanças:
+# 3. **Recarregue as configurações do shell**: Após salvar as alterações no arquivo de inicialização do _shell_, recarregue as configurações do _shell_ para aplicar as mudanças:
 # 
 # ```
 # source ~/.bashrc  # Para Bash
@@ -186,9 +213,11 @@
 # 
 # 4. **Inicialize o `Conda` novamente**: Execute o comando `conda init` novamente para garantir que todas as configurações sejam corretamente carregadas: `conda init`
 # 
-#     Isso deve garantir que o `Conda` esteja configurado corretamente para o seu ambiente de shell.
+#     Isso deve garantir que o `Conda` esteja configurado corretamente para o seu ambiente de _shell_.
 # 
-# 5. **Ative o ambiente base do `Conda`**: Tente ativar o ambiente `base` do `Conda` novamente após as configurações: `conda activate base`
+# 5. Fechar e abrir o `Terminal Emulator`
+# 
+# 6. **Ative o ambiente base do `Conda`**: Verificar se a palavra `(base)` aparece no seu `Terminal Emulator`. Se estiver aparecendo, tudo está configurado corretamente, se não, tente ativar o ambiente `base` do `Conda` novamente após as configurações: `conda activate base`
 # 
 #     Se tudo estiver configurado corretamente, você não deve ver mais o erro `CondaError: Run 'conda init' before 'conda activate'`.
 # 
@@ -196,7 +225,7 @@
 # 
 # **Observações adicionais**:
 # 
-# - Certifique-se de que não há linhas no seu arquivo de inicialização do shell que possam interferir com a configuração do Conda, especialmente se você estiver usando gerenciadores de ambiente como virtualenv.
+# - Certifique-se de que não há linhas no seu arquivo de inicialização do _shell_ que possam interferir com a configuração do Conda, especialmente se você estiver usando gerenciadores de ambiente como virtualenv.
 # 
 # - Se estiver usando o `Zsh` com `Oh My Zsh`, pode ser necessário ajustar algumas configurações adicionais para integrar o Conda corretamente.
 # 
@@ -205,44 +234,109 @@
 
 # ### 2.2 Acelerar o pacote `scikit-learn`
 # 
-# O pacote instalado do scikit-learn pode ser acelerado usando o scikit-learn-intelex.
+# O pacote instalado do `scikit-learn` pode ser acelerado usando o `scikit-learn-intelex`.
 # Mais detalhes estão disponíveis aqui: https://intel.github.io/scikit-learn-intelex
 # 
+# ```
 # Installed package of scikit-learn can be accelerated using scikit-learn-intelex.
 # More details are available here: https://intel.github.io/scikit-learn-intelex
 # 
 # For example:
 # 
+# $ conda install scikit-learn-intelex
+# $ python -m sklearnex my_application.py
 # ```
-# conda install scikit-learn-intelex
-# python -m sklearnex my_application.py
-# ```
+# 
+# 1. Execute a primeira linha acima para acelerar o pacote `scikit-learn`.
 
 # ### 2.3 Atualizar todos os pacotes do `conda`
+# 
+# Para atualizar todos os pacotes do `conda`, siga o(s) passo(s) abaixo:
 # 
 # 1. Depois da instalação, execute o comando: `conda update --all`
 
 # ## 3. Configurar o ambiente virtual `base` para ser o `Python 3.8` no `Anaconda3`
 # 
-# Para verificar se você tem o Anaconda instalado no seu computador e, especificamente, se é uma versão que inclui o `Python 3.8`, você pode seguir estes passos:
+# Para verificar se você tem o `Anaconda` instalado no seu computador e, especificamente, se é uma versão que inclui o `Python 3.8`, você pode seguir estes passos:
 # 
-# 1. **Verificar a Versão do Anaconda:** Abra um terminal e digite o seguinte comando: `conda --version`
+# 1. **Verificar a versão do `Anaconda`:** Abra um `Terminal Emulator` e digite o seguinte comando: `conda --version`
 # 
 #     Este comando retornará a versão do conda instalada, se o `Anaconda` ou `Miniconda` estiver instalado no seu sistema.
 # 
-# 2. **Verificar a Lista de Ambientes do `Conda`:** Para ver uma lista de todos os ambientes do conda criados, que podem incluir um ambiente com o `Python 3.8`, use: `conda env list`
+# 2. **Verificar a lista de ambientes do `Conda`:** Para ver uma lista de todos os ambientes do conda criados, que podem incluir um ambiente com o `Python 3.8`, use: `conda env list`
 # 
 # Para definir o `Python 3.8` como a versão do `Python` no ambiente `base` do seu `Anaconda`, você precisará atualizar o `Python` nesse ambiente. Este processo substituirá a versão atual do `Python` (`3.11.5`, por exemplo) pela versão `3.8` no ambiente `base`. Aqui está como você pode fazer isso:
 # 
-# 1. **Abra um Terminal:** Certifique-se de que você está no ambiente `base` do `Anaconda`. Se não estiver, você pode ativar o ambiente `base` com o comando: `conda activate base`
+# 3. **Abra um `Terminal Emulator`:** Certifique-se de que você está no ambiente `base` do `Anaconda`. Se não estiver, você pode ativar o ambiente `base` com o comando: `conda activate base`
 # 
-# 2. **Atualizar o `Python` para a Versão `3.8`:** Use o comando `conda install` para especificar a versão do `Python` que deseja instalar no ambiente `base`. Execute o seguinte comando: `conda install python=3.8`
+# 4. **Atualizar o `Python` para a versão `3.x`:** Use o comando `conda install` para especificar a versão do `Python` que deseja instalar no ambiente `base`. Execute o seguinte comando: `conda install python=3.x`
 # 
-#     Esse comando solicitará que o `Conda` atualize o `Python` e possivelmente alguns pacotes dependentes para garantir compatibilidade com o `Python 3.8`. Siga as instruções na tela para confirmar a instalação.
+#     Substitua o `x` pela versão desejada, por exemplo: `conda install python=3.8`
 # 
-# 3. **Verificar a Versão do `Python`:** Após a conclusão da instalação, verifique a versão do `Python` para garantir que a atualização foi bem-sucedida: `python --version`
+#     Esse comando solicitará que o `Conda` atualize o `Python` e possivelmente alguns pacotes dependentes para garantir compatibilidade com o `Python 3.x`. Siga as instruções na tela para confirmar a instalação.
+# 
+# 3. **Verificar a versão do `Python`:** Após a conclusão da instalação, verifique a versão do `Python` para garantir que a atualização foi bem-sucedida: `python --version`
 # 
 #     A saída deve mostrar `Python 3.8.x`, confirmando que o ambiente `base` agora está usando o `Python 3.8`.
+
+# ## 4. Desinstalar o `Anaconda`
+# 
+# Para desinstalar o `Anaconda` do seu sistema, siga estes passos:
+# 
+# ### 4.1 Remover a instalação do `Anaconda`**
+# 
+# 1. Remova o diretório de instalação:
+# 
+#     - Primeiro, você deve remover o diretório onde o `Anaconda` foi instalado. Se o `Anaconda` foi instalado no diretório padrão `/home/<username>/anaconda3`, você pode remover o diretório com o seguinte comando: `rm -rf ~/anaconda3`
+# 
+#     - Caso o `Anaconda` tenha sido instalado em outro diretório, substitua `~/anaconda3` pelo caminho correto.
+# 
+# 2. **Remova os arquivos de configuração do `Conda`**: Em alguns casos, podem existir arquivos de configuração em seu diretório `home` que você pode querer remover. Execute os seguintes comandos para remover esses arquivos: `rm -rf ~/.condarc ~/.conda ~/.continuum`
+# 
+
+# ### 4.2 Remover referências no arquivo de perfil
+# 
+# 1. **Edite o arquivo de perfil**:
+# 
+#     1.1 Abra o arquivo de perfil global (para uma instalação global) ou o arquivo de perfil do usuário (por exemplo, `~/.bashrc`, `~/.zshrc` etc.), dependendo de onde você adicionou o caminho do `Anaconda`.
+# 
+#     1.2 **Para editar o arquivo `~/.bashrc` ou `~/.zshrc`**:
+# 
+#     `sudo nano ~/.bashrc`
+# 
+#     ou
+#     
+#     `nano ~/.zshrc`
+# 
+# 2. **Remova as linhas relacionadas ao `Anaconda`**:
+# 
+#     2.1 Localize e remova qualquer linha que tenha sido adicionada para configurar o `PATH` para o `Anaconda`, como: `export PATH="$HOME/anaconda3/bin:$PATH"`
+# 
+#     2.2 Salve as alterações e saia do editor (`Ctrl+O` para salvar e `Ctrl+X` para sair no `Nano`).
+# 
+# 3. **Recarregue o arquivo de perfil**: Após remover as linhas, recarregue o arquivo de perfil para aplicar as mudanças:
+# 
+#     `source ~/.bashrc`
+# 
+#     ou
+# 
+#     `source ~/.zshrc`
+
+# ### 4.3 Verificar a remoção
+# 
+# 1. **Verifique se o `Anaconda` foi removido**:
+# 
+#     1.1 Tente executar o comando `conda` para verificar se ainda está disponível: `conda`
+# 
+#     1.2 Se o comando não for encontrado, isso indica que o `Anaconda` foi removido com sucesso.
+# 
+
+# ### 4.4 Remover dependências adicionais (opcional)
+# 
+# Se você instalou pacotes ou aplicativos adicionais relacionados ao `Anaconda`, você pode querer removê-los também. Certifique-se de verificar se há outras dependências ou arquivos associados ao `Anaconda` que possam precisar de limpeza adicional.
+# 
+# Seguindo estes passos, você deverá conseguir desinstalar o `Anaconda` do seu sistema de forma completa.
+# 
 
 # ## Referências
 # 
